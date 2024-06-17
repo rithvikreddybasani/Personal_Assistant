@@ -52,7 +52,7 @@ def processCommand(c):
     speak("Ask me anything")
   
 if __name__ == '__main__':
-    speak("Initializing Jarvis")
+    speak("Initializing Elina")
     while True:
       # listen for the wake word "Jarvis"
       # obtain audio from the microphone
@@ -65,7 +65,7 @@ if __name__ == '__main__':
               print("Listening....")
               audio = r.listen(source,timeout=2)
           command = r.recognize_google(audio)
-          if(command.lower()=='jarvis'):
+          if(command.lower()=='elina'):
             speak("Ya")
             with sr.Microphone() as source:
               print("Jarvis Active...")
